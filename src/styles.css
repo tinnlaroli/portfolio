@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --background-color: #282A36; 
+    --primary-color: #6272A4; 
+    --secondary-color: #44475A;
+    --text-color: #f8f8f2; 
+    --blue-color: #8BE9FD;
+    --green-color: #50fa7b;
+    --orange-color: #FFB86C;
+    --pink-color: #ff79c6;
+    --purple-color: #bd93f9;
+    --red-color: #ff5555;
+    --yellow-color: #f1fa8c;
+    --font-family: 'Red hat display', Courier, monospace;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+}

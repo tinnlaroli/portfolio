@@ -1,0 +1,20 @@
+<div class="lang-switcher">
+  <button (click)="cambiarIdioma('es')">🇪🇸</button>
+  <button (click)="cambiarIdioma('en')">🇺🇸</button>
+  <button (click)="cambiarIdioma('fr')">🇫🇷</button>
+</div>
+
+<div class="contact">
+  <div class="content-wrapper">
+    <div class="buttons">
+      <button class="circle-btn blue"></button>
+      <button class="circle-btn lightblue"></button>
+      <button class="circle-btn green"></button>
+      <button class="circle-btn yellow"></button>
+    </div>
+    <p class="quote">
+      {{ 'QUOTE' | translate }}
+    </p>
+  </div>
+</div>
+

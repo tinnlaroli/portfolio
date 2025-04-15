@@ -1,0 +1,83 @@
+.contact {
+  position: fixed;
+  bottom: 0;
+  left: 3.125%;
+  right: 3.125%;
+  height: 40px; 
+  background-color: var(--secondary-color);
+  border-radius: 120px 120px 0 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact:hover {
+  height: 160px;
+  transform: translateY(-10px);
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* Botones en fila */
+.buttons {
+  display: flex;
+  gap: 1rem;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+
+.contact:hover .buttons {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Frase */
+.quote {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--purple-color);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+}
+
+.contact:hover .quote {
+  opacity: 1;
+}
+
+/* Botones */
+.circle-btn {
+  width: 120px;
+  height: 64px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.circle-btn:hover {
+  transform: scale(1.1);
+}
+
+.blue {
+  background-color: var(--primary-color);
+}
+.lightblue {
+  background-color: var(--blue-color);
+}
+.green {
+  background-color: var(--green-color);
+}
+.yellow {
+  background-color: var(--yellow-color);
+}
